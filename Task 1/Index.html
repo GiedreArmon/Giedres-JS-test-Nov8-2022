@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weight Converter</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Custom JS -->
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Header code-->
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <h1 class="headline">Weight Converter</h1>
+        <!-- Users input -->
+        <form>
+          <!-- niekaip nepavyko su onsubmit, kad skaiciuotu po mygtuko paspaudimo, tai padariau su oninput -->
+          <input type="number" id="search" placeholder="Enter kilograms..." oninput="convertKg(this.value)"/>  
+          <input type="submit" id="submit-btn" value="Calculate"/>
+        </form>
+        <!-- Place for output after form submission -->
+        <div id="output">
+          <p>Pounds: <span id="Pounds"></span></p><br>      
+          <p>Grams: <span id="Grams"></span></p><br> 
+          <p>Ounces: <span id="Ounces"></span></p><br> 
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- Footer code -->
+    </footer>
+  </body>
+</html>
